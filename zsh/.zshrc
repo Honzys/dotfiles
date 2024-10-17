@@ -10,7 +10,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_CUSTOM=$HOME/zsh_custom
 ZSH_THEME="jstratil"
 
-plugins=(git virtualenv)
+plugins=(git virtualenv git_branch)
 
 export PATH="/usr/local/bin:/usr/local/sbin:${PATH}:${HOME}/bin:${HOME}/.local/bin"
 
