@@ -7,7 +7,7 @@ apt install -y stow git git-lfs zsh curl wget tmux
 # Set up symlinks using stow
 for d in `ls -d */`;
 do
-    ( stow --restow $d )
+    ( stow --restow $d -t ~/)
 done
 
 # Update settings
