@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 
-# Install Homebrew formulae
-source brew.sh
-
-# Install node packages
-source node.sh
+# Install all necessary packages
+apt update
+apt install -y stow git git-lfs zsh curl wget tmux
 
 # Set up symlinks using stow
-source symlinks.sh
+for d in `ls -d */`;
+do
+    ( stow --restow $d )
+done
 
 # Update settings
 source ~/.zshrc

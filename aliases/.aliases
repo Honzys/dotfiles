@@ -1,16 +1,23 @@
 #!/usr/bin/env bash
 
-# Replace cat with bat
-alias cat='bat'
-
-# Combine fzf and bat for a pretty file preview
-alias preview="fzf --preview 'bat --color \"always\" {}'"
-
-# Improved grep
-alias search='ack -B'
-
-# Improved help
-alias help='tldr'
-
 # Dotfiles
 alias dotfiles='cd ~/dotfiles'
+
+# cd to work directory
+alias cdw='cd /srv/workplace/jstratil/repos'
+
+alias turing="ssh -AXYC jstratil@turing"
+alias ada="ssh -AXYC jstratil@ada"
+alias gauss="ssh -AXYC jstratil@gauss"
+
+alias dodjango="ssh -AXYC root@157.230.27.133"
+
+alias l="ls -hal"
+alias ll="ls -hal"
+alias st="tig status"
+alias pushf="git push --force-with-lease"
+alias pushu="git push -u origin HEAD"
+alias rebase="git rebase -i --autosquash"
+
+# Docker root
+alias docker-root="env DOCKER_HOST=unix:///var/run/docker.sock docker"

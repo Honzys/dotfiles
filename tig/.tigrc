@@ -1,0 +1,16 @@
+bind diff A !git commit --amend
+bind main B !git rebase -i %(commit)^
+bind diff B !git rebase -i %(commit)^
+bind main F !git commit --fixup %(commit)
+bind diff F !git commit --fixup %(commit)
+bind main   w !?git push origin
+bind status w !?git push origin
+bind main M !git rebase -i --autosquash origin/master
+bind diff M !git rebase -i --autosquash origin/master
+bind status M !git rebase -i --autosquash origin/master
+bind main P !git rebase --continue
+bind diff P !git rebase --continue
+bind status P !git rebase --continue
+
+bind generic <PageUp> move-half-page-up
+bind generic <PageDown> move-half-page-down

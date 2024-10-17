@@ -1,14 +1,18 @@
 [user]
-	name = Dave Aspinall
-	email = daveaasp@gmail.com
+        name = Jan Stratil
+        email = jan.stratil@innovatrics.com
 [core]
-    excludesfile = /Users/daveaspinall/.gitignore_global
-    filemode = false
+        autocrlf = input
+[oh-my-zsh]
+        hide-status = 1
+[alias]
+        rbi = =
+[pull]
+        rebase = true
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-    required = true
-	process = git-lfs filter-process
-[pager]
-    diff = diff-so-fancy | less --tabs=1,5 -RFX
-    show = diff-so-fancy | less --tabs=1,5 -RFX
+        required = true
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+[credential]
+        helper = store
