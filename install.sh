@@ -9,7 +9,7 @@ source locale.sh || true
 
 # Install all necessary packages
 apt update
-apt install -y stow git git-lfs zsh curl wget tmux
+apt install -y stow git git-lfs zsh curl wget tmux vim
 
 # Install oh-my-zsh
 chsh -s $(which zsh) || true
@@ -25,4 +25,4 @@ do
 done
 
 # Update settings
-source ~/.zshrc
+zsh ~/.zshrc
